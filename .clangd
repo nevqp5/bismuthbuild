@@ -1,0 +1,5 @@
+If:
+  PathMatch: resources/shaders/headers/.*\.h
+  PathExclude: resources/shaders/headers/shared.h
+Diagnostics:
+  Suppress: "*"

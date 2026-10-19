@@ -1,0 +1,50 @@
+{
+	"geode": "5.10.1",
+	"gd": {
+		"win": "2.2081"
+	},
+	"id": "iliashdz.bismuth",
+	"name": "Bismuth (experimental)",
+	"version": "v0.1.0-alpha",
+	"developer": "IliasHDZ",
+	"description": "Rendering optimization mod",
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	},
+	"tags": [
+		"performance"
+	],
+	"links": {
+		"source": "https://github.com/IliasHDZ/Bismuth",
+		"community": "https://discord.gg/B6H6ZVJx9C"
+	},
+	"resources": {
+		"files": [
+			"resources/shaders/*.vert",
+			"resources/shaders/*.frag",
+			"resources/shaders/*.comp",
+			"resources/shaders/*.h",
+			"resources/shaders/headers/*.h",
+			"resources/*.json"
+		]
+	},
+	"settings": {
+		"enabled": {
+			"name": "Bismuth enabled",
+			"type": "bool",
+			"default": true
+		},
+		"ingame_enable": {
+			"name": "In-game enable/disable",
+			"type": "bool",
+			"default": false,
+			"description": "Allows you to enable and disable Bismuth while playing by pressing F8. It also allows you to use Difference Mode by pressing F9 (Difference Mode is very unstable).\n\n WARNING: This option effectively removes any optimization."
+		},
+		"use_mapped_buffers": {
+			"name": "Use persistently mapped buffers",
+			"type": "bool",
+			"default": false,
+			"description": "May work well with integrated GPU, not so much with discrete GPUs (like a graphics card)"
+		}
+	}
+}
